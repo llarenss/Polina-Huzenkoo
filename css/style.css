@@ -571,12 +571,13 @@ input[type=submit]{
 .desc{
     width: 45%;
 }
-
+  .cart {
+    background-color: #d4c03e1e;
+  } 
   .cart-item {
     display: flex;
     align-items: center;
-    padding: 15px;
-    border-bottom: 1px solid #ccc;
+    padding: 10px;
     text-align: center;
   }
   
@@ -585,11 +586,10 @@ input[type=submit]{
   }
   
   .cart-item img {
-    width: 80px; 
-    height: 80px;
+    width: 60px; 
+    height: 60px;
     margin-right: 20px;
-    border-radius: 5px; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    border-radius: 20px; 
   }
   
   .btn-no-style {

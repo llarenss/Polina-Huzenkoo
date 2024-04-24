@@ -54,7 +54,7 @@
                 <h1 class="text-contact-title">Contact us</h1>
                 <p class="text-content-decoration">×××××</p>
                 <div id="pear-app">
-                    <div v-if="cartVisible">
+                    <div v-if="cartVisible" class="cart">
                       <div class="cart-item" v-for="item in product">
                         <div class="w-4"><img v-bind:src="item.image" alt="item.title"></div>
                         <div class="w-4 color-grapefruit">{{item.title}}</div>
