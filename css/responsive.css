@@ -9,6 +9,7 @@
     .w-2 {
         width: 100%;
     }
+    .text-content-decoration,
     .align-right {
         text-align: center;
     }
@@ -32,8 +33,6 @@
     #search input {
         max-width: 100%;
     }
-
-   
 
     #menu {
         display: none;
@@ -144,7 +143,6 @@
         width: 30%;
          height: 30%;
     }
-    
 }
 
 
@@ -157,7 +155,8 @@
      .title{
         font-size: 2.5em;
     }
-    .text-content-decoration{
+    .text-content-decoration-grapefruit,
+    .text-content-decorati0on{
         text-align: center;
     } 
     .text-content-label{
@@ -204,7 +203,7 @@
 }
 
 /*  index categories */
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 710px) {
 
     .content-tomatoone h1{
         font-size: 30px;
@@ -248,7 +247,9 @@
     .content-tomatoone {
         flex-direction: column;
     }
-
+    .text{
+        font-size: 1em;
+    }
     .text-right-tomato {
         margin-top: 20px;
         margin-bottom: 20px;
@@ -270,7 +271,12 @@
     .img-tomato{
         width: 70%;
     }
-
+    .flex-desc{
+        flex-direction: column;
+    }
+    .desc{
+        width: 100%;
+    }
     .content-tomatoone .w-2 {
         width: 100%;
         margin-bottom: 30px;
@@ -297,3 +303,23 @@
     width: 82%;
     }
 } 
+
+/*сontact-us*/
+@media only screen and (max-width: 480px) {
+    .cart-item {
+      flex-direction: column;
+      align-items: center; 
+    }
+  
+    .cart-item img {
+      width: 60px; 
+      height: 60px;
+      margin-right: 0; 
+      margin-bottom: 10px;
+    }
+  
+    .w-4{
+        margin-top: 15px;
+        width: 100%;
+    }
+  }

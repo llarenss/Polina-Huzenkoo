@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" />
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/responsive.css" />
+        <title>Pear one</title>
+    </head>
+    <body>
+        <div class="header header-shadow">
+            <div class="wrapper">
+                <div class="row">
+                    <div class="w-2">
+                        <div id="logo">
+                            <a href="../index.html"><img src="../images/Logo.png" alt="Logo" /></a>
+                        </div>
+                    </div>
+                    <div class="w-2 align-right">
+                        <div id="search">
+                            <div id="search-in" class="flex">
+                                <input type="search" placeholder="Search" />
+                                <button>Submit</button>
+                            </div>
+                        </div>
+                        <div id="menu">
+                            <ul>
+                                <li><a href="../index.html">Home</a></li>
+                                <li><a href="">Company Profile</a></li>
+                                <li><a href="../pages/Tomato-all.html">Products</a></li>
+                                <li><a href="">Services</a></li>
+                                <li><a href="">R & D</a></li>
+                                <li><a href="../pages/Contact-us.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="burger-btn">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="bg-tomato">
+            <div class="wrapper" id="pear-app">
+                <div class="back-tomatoall">
+                    <p><a href="../pages/Tomato-all.html">←&nbsp;&nbsp;&nbsp;&nbsp;Return to all pears</a></p>
+                </div>
+                <div class="content-tomatoone" id="pear">
+                    <div class="w-2">
+                        <h1>{{product.title}}</h1>
+                        <p class="text-content-decoration-pear
+                        ">×××××</p>
+                        <div class="text-right-tomato">
+                            <img src="../images/pear_ico.png" alt="" />
+                            <span>
+                                Very high yield and excellent fruits quality!
+                            </span>
+                        </div>
+                        <div class="title-tomato">
+                            <span><b>CHARACTERISTICS</b></span>
+                            <hr />
+                            <br />
+                        </div>
+                        <span class="characteristics-text">
+                            <b>Resistance</b> <br />
+                            HR: ToMV:0-2; Fol: 1,2; Ve/Vd; <br />
+                            IR: TYLCVw
+                        </span>
+                    </div>
+                    <div class="w-2">
+                        <img class="img-tomato" :src="product.image" alt="img-pear" />
+
+                        <div class="btn-pdf-tomato">
+                            <a class="pdf-download-button" href="#" @click.prevent="addToCart(product.id)" v-if="!btnVisible">
+                                <span class="pdf-icon"></span>
+                                Add to cart
+                            </a>
+                            <a class="pdf-download-button" href="../pages/Contact-us.html" v-if="btnVisible">
+                                <span class="pdf-icon"></span>
+                                Go to cart
+                            </a>
+                        </div>
+                        </div>
+                </div>
+                <div class="flex-desc">
+                <div class="desc">
+                    <div class="title-tomato">
+                        <span><b>MAIN</b></span>
+                        <hr />
+                    </div>
+                    <div class="title-tomato">
+                        <span><b>Plant</b></span>
+                        <hr />
+                        <br />
+                    </div>
+                    <ul class="ul-tomatoone">
+                        <li v-for="value in product.desc.plant">
+                            <span>{{value}}</span>
+                        </li>
+                    </ul>
+                    <div class="title-tomato">
+                        <span><b>Fruit</b></span>
+                        <hr />
+                        <br />
+                    </div>
+                    <ul class="ul-tomatoone">
+                        <li v-for="value in product.desc.fruit">
+                            <span>{{value}}</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="desc" id="pear-app">
+                    <div class="title-tomato">
+                        <span><b>ADDITIONAL</b></span>
+                        <hr />
+                    </div>
+                    <div class="title-tomato">
+                        <span><b>Cycle</b></span>
+                        <hr />
+                        <br />
+                    </div>
+                    <ul class="ul-tomatoone">
+                        <li v-for="value in product.desc.cycle">
+                            <span>
+                                {{value}}
+                            </span>
+                        </li>
+                    </ul>
+                    <div class="title-tomato">
+                        <span><b>Color</b></span>
+                        <hr />
+                        <br />
+                    </div>
+                    <span class="text-tomatoone">{{product.desc.color}}</span>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-content">
+                <div id="links">
+                    <ul>
+                        <li><a href="">PROFILE</a></li>
+                        <li><a href="">MANAGEMENT</a></li>
+                        <li><a href="">PRODUCTS</a></li>
+                        <li><a href="">R&D</a></li>
+                        <li><a href="">LINKS</a></li>
+                        <li><a href="">SITEMAP</a></li>
+                        <li><a href="">CONTACT</a></li>
+                    </ul>
+                </div>
+
+                <div class="social">
+                    <a href=""><img src="../images/Ico_in.png" alt="in" /></a>
+                    <a href=""><img src="../images/Ico_inst.png" alt="inst" /></a>
+                    <a href=""><img src="../images/Ico_tube.png" alt="youtube" /></a>
+                    <a href=""><img src="../images/Ico_tw.png" alt="twitter" /></a>
+                    <a href=""><img src="../images/Ico_fb.png" alt="facebook" /></a>
+                </div>
+            </div>
+            <p>AGRIDERA SEEDS & AGRICULTURE LTD. © 2020</p>
+        </div>
+        <script src="../js/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+        <script src="../js/mainvue.js"></script>
+    </body>
+</html>

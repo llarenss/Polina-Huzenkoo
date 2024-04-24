@@ -7,7 +7,11 @@ body {
 }
 
 .bg-pink{
-    background-color:#FCF0F0;
+    background-color:#f6e67ddb;
+}
+.h480{
+    height: 420px;
+    overflow: hidden;
 }
 
 .wrapper {
@@ -167,7 +171,11 @@ a{
     color: #57984C;
     font-weight: bold;
 }
-
+.text-content-decoration-pear {
+    font-family: 'Roboto Slab', serif;
+    color: #f6e67ddb;
+    font-weight: bold;
+}
 .text-content-main {
     font-family: 'Roboto Slab', serif;
     font-weight: normal;
@@ -251,7 +259,7 @@ img {
 }
 
 .vertical-line {
-    border-left: 5px solid #EB5757; 
+    border-left: 5px solid #ECD95F; 
     border-radius: 3px;
     width: 0px;
   }
@@ -259,6 +267,7 @@ img {
     display: flex;
     flex-direction: row;
     margin-top: 30px;
+    border-radius: 30px;
 }
 .white-list{
     margin-left: -20px;
@@ -281,6 +290,7 @@ img {
     line-height: 162.7%;
     font-size: 20px;
     margin-bottom: 0;
+    margin-top: 10px;
 }
 
 .item-white-list:last-child {
@@ -300,11 +310,12 @@ img {
  
 .tomato p{
      text-align: center;
-     color: #57984C;
+     color: #d4c03e;
      background-color: #fff;
      font-size: 14px;
      margin: 0;
-     width: 100%;
+     padding: 5px 2px;
+     width: 92%;
  }
  
  .tomato{
@@ -323,21 +334,13 @@ img {
     height: auto;
 }
 
-.tomato p{
-    text-align: center;
-    color: #57984C;
-    background-color: #fff;
-    margin: 0;
-    width: 92%;
-}
-
 .tomato p a{  
-    color: #57984C;
+    color: #ac9b26;
 }
 
 .back-tomatoall a {
     font-size: 14px;
-    color: #57984C;
+    color: #ECD95F;
     text-decoration: none;
 }
 
@@ -358,7 +361,7 @@ img {
 
 .ul-tomatoone li {
     margin-bottom: 15px;
-    color: #57984C;
+    color: #ECD95F;
 }
 
 .ul-tomatoone li span {
@@ -371,8 +374,8 @@ img {
     padding: 6px 32px;
     margin-top: 30px;
     border-radius: 40px;
-    border: 3px solid #57984C;
-    color: #57984C;
+    border: 3px solid #ECD95F;
+    color: #ECD95F;
     text-decoration: none;
     font-weight: bold;
     font-size: 17px;
@@ -400,7 +403,7 @@ img {
 
 .content-tomatoone h1 {
     font-size: 54px;
-    color: #57984C;
+    color: #ECD95F;
     margin: 0;
     margin-bottom: 44px;
     line-height: 148%;
@@ -415,18 +418,18 @@ img {
 .text-right-tomato span {
     font-size: 30px;
     font-weight: bold;
-    color: #CF2333;
+    color: #ECD95F;
     margin-left: 35px;
 }
 
 .title-tomato {
-    color: #57984C;
+    color: #ECD95F;
     width: 26%;
     margin-top: 44px;
 }
 
 .title-tomato hr {
-    border-top: 1px solid #57984C;
+    border-top: 1px solid #ECD95F;
     width: 100%;
 }
 
@@ -439,7 +442,7 @@ img {
 }
 
 .pdf-icon {
-    content: url('../images/pdf.png'); 
+    content: url('../images/cart.png'); 
     margin-right: 25px;
     padding: 5px 0;
 }
@@ -555,3 +558,72 @@ input[type=submit]{
     margin:0 auto;
 }
 
+.tomato a,
+.tomato img,
+.tomato p {
+  flex: 1; 
+}
+.flex-desc{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.desc{
+    width: 45%;
+}
+
+  .cart-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  .cart-item > div {
+    flex: 1;
+  }
+  
+  .cart-item img {
+    width: 80px; 
+    height: 80px;
+    margin-right: 20px;
+    border-radius: 5px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .btn-no-style {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #ECD95F;
+    font-size: 3em;
+
+  }
+  
+  .btn-no-style:hover {
+    color: #8b6024;
+  }
+  
+  .color-pear{
+    color: #ECD95F;
+  }
+
+ .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+.container h2 {
+    color: #333;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.container p {
+    margin: 0 0 10px;
+}
+.container label {
+    font-weight: bold;
+}

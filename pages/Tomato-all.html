@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" />
+        <title>Pear All</title>
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/responsive.css" />
+    </head>
+    <body>
+        <div class="header-white">
+            <div class="wrapper">
+                <div class="row">
+                    <div class="w-2">
+                        <div id="logo">
+                            <a href="../index.html"><img src="../images/Logo.png" alt="Logo" /></a>
+                        </div>
+                    </div>
+
+                    <div class="w-2 align-right">
+                        <div id="search">
+                            <div id="search-in" class="flex">
+                                <input type="search" placeholder="Search" />
+                                <button>Submit</button>
+                            </div>
+                        </div>
+
+                        <div id="menu">
+                            <ul>
+                                <li><a href="../index.html">Home</a></li>
+                                <li><a href="">Company Profile</a></li>
+                                <li><a href="">Products</a></li>
+                                <li><a href="">Services</a></li>
+                                <li><a href="">R & D</a></li>
+                                <li><a href="../pages/Contact-us.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="burger-btn">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="bg-pink">
+            <div class="content">
+                <div id="slider-img" class="h480">
+                    <img src="../images/pear_bg.jpg" style="width: 1920px;" alt="tomatoes" />
+                </div>
+            </div>
+
+            <div class="wrapper">
+                <div class="description">
+                    <h2 class="text-content-title">Agridera Fresh Market Pear Hybrids</h2>
+
+                    <p class="text-content-decoration">×××××</p>
+
+                    <p class="text-content-main-smaller">
+                        Agridera aims to establish itself as a premier company in pear breeding, cultivation, and distribution. We dedicate significant resources to research and development to address the needs of growers and
+                        consumers across various regions.
+                    </p>
+
+                    <p class="text-content-main-smaller">
+                        Our focus lies in breeding pear varieties resistant to prevalent diseases such as citrus canker and citrus greening, while also enhancing traits like flavor, juiciness, and color.
+                    </p>
+
+                    <p class="text-content-main-smaller">
+                        We prioritize the development of pear varieties with early maturation, various sizes, firmness, vibrant color, rich flavor, resistance to cracking, extended shelf life, and adaptability to diverse temperature
+                        conditions. We aim to offer a wide range of options, including round and elongated shapes, each combining exceptional quality with disease resistance.
+                    </p>
+
+                    <div class="visual">
+                        <div class="vertical-line"></div>
+                        <p class="text-content-main-smaller">
+                            Agirdera Pear breeding programs are focusing on three main segments: Greenhouse Indeterminate Pears, Open-field Indeterminate Pears, and Bush Type Open-field Pears.
+                        </p>
+                    </div>
+
+                    <div class="white-list">
+                        <div class="item-white-list">
+                            <h4>Greenhouse Pear <br> Breeding Program</h4>
+                            <hr />
+                            <p class="text-content-main-smaller">
+                                <b>This breeding is aimed for the Spanish and Turkish markets.</b> For single and cluster picks, round fruit shape and resistances of TYLCV, TSWV, Nematodes and FORL (Fusarium oxysporum f.sp.
+                                radicis-lycopersici). Some hybrids may include more resistances, such as Cladosporium and Leveillula Taurica (Lv).
+                            </p>
+                        </div>
+                        <div class="item-white-list">
+                            <h4>
+                                Open-field Indeterminate <br />
+                                Pear
+                            </h4>
+                            <hr />
+                            <p class="text-content-main-smaller">
+                                <b>This breeding is for Brazilian, Moroccan, and Turkish markets.</b>The main focus is on large round shape fruits (200 grams plus); and resistances of TYLCV, TSWV, Nematodes and FORL. In the near future, F3
+                                (Fusarium oxysporum f.sp. lycopersici) will be included as basic resistance in our cultivars.
+                            </p>
+                        </div>
+                        <div class="item-white-list">
+                            <h4>
+                                Open-field Bush Type <br />
+                                Pears
+                            </h4>
+                            <hr />
+                            <p class="text-content-main-smaller">
+                                <b>This breeding is for Mediterranean markets.</b> We breed round and elongated shapes, standard sizes (140- 180 grams), and beef sizes (min. 180 grams up to 300 grams and more). We combine the resistances of
+                                TYLCV, TSWV and Nematodes as basic resistances in our hybrids. However, some hybrids may include more resistances, such as Cladosporium and Leveillula Taurica (Lv).
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="visual">
+                        <div class="vertical-line"></div>
+                        <p class="text-content-main-smaller"><b>Agridera operates through international and local distributers around the world.</b></p>
+                    </div>
+
+                    <div class="tomatoes">
+                        <div class="wrapper-tomato" id="pear-app">
+                            <div class="tomato w-3" v-for="item in products">
+                                <a :href="'Tomato-one.html#'+item.id"><img v-bind:src="item.image" alt="item.title" /></a>
+                                <p>
+                                    <a :href="'Tomato-one.html#'+item.id"><b>{{item.title}}</b></a> <br />
+                                    {{item.short_text}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-content">
+                <div id="links">
+                    <ul>
+                        <li><a href="">PROFILE</a></li>
+                        <li><a href="">MANAGEMENT</a></li>
+                        <li><a href="">PRODUCTS</a></li>
+                        <li><a href="">R&D</a></li>
+                        <li><a href="">LINKS</a></li>
+                        <li><a href="">SITEMAP</a></li>
+                        <li><a href="">CONTACT</a></li>
+                    </ul>
+                </div>
+                <div class="social">
+                    <a href=""><img src="../images/Ico_in.png" alt="in" /></a>
+                    <a href=""><img src="../images/Ico_inst.png" alt="inst" /></a>
+                    <a href=""><img src="../images/Ico_tube.png" alt="youtube" /></a>
+                    <a href=""><img src="../images/Ico_tw.png" alt="twitter" /></a>
+                    <a href=""><img src="../images/Ico_fb.png" alt="facebook" /></a>
+                </div>
+            </div>
+            <p>AGRIDERA SEEDS & AGRICULTURE LTD. © 2020</p>
+        </div>
+        <script src="../js/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+        <script src="../js/mainvue.js"></script>
+    </body>
+</html>

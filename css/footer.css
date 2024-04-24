@@ -1,4 +1,4 @@
-.footer-c {
+.footer-content {
     display: flex;
     flex-direction: row;
     background-color: #2D3F45;
@@ -17,22 +17,22 @@
     margin-right:3px; 
 }
 
-.link {
+#links {
     font-family: 'Roboto', serif;
 }
 
-.link ul {
+#links ul {
     padding: 0;
     margin: 0;
     list-style: none;
 }
 
-.link ul li {
+#links ul li {
     display: inline;
     margin-left: 3.5em;
 }
 
-.link ul li a {
+#links ul li a {
     color: #ffffff;
     font-size: 16px;
     text-decoration: none;
@@ -51,25 +51,27 @@
 }
 
 @media screen and (max-width: 1175px) {
-    .footer-c {
+    .footer-content {
         flex-direction: column;
     }
-    .link ul {
+    #links ul {
         display: flex;
-        flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
         padding: 0;
+        flex-direction: column;
     }
-    .link ul li {
-    margin-left: 0;
-    }
+    #links ul li {
+        flex: 0 0 50%; 
+        text-align: center;
+        margin-left:0;
+        margin-bottom: 10px;
 
-    .link ul li a {
+    }
+    #links ul li a {
         color: #ffffff;
         font-size: 16px;
         text-decoration: none;
-        
     }
     .social {
         justify-content: center;
